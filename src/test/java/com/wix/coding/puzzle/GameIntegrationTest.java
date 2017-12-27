@@ -20,7 +20,6 @@ public class GameIntegrationTest {
 		GameEngine engine = new GameEngine(presenter, configurer);
 
 		engine.run();
-		presenter.render();
 		presenter.verifyGameBoardIsRendered();
 	}
 }
