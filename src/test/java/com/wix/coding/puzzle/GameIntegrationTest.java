@@ -1,11 +1,26 @@
 package com.wix.coding.puzzle;
 
+import org.junit.Test;
+
 public class GameIntegrationTest {
-	public void theGameShouldBeAbleToStart() {
+
+	@Test
+	public void theGameShouldBeAbleToRunSuccessfully() {
 		Configurer configurer = new DefaultConfigurer();
-		Presenter presenter = new ConsolePresenter();
+		Presenter presenter = new TestPresenter();
 		GameEngine engine = new GameEngine(presenter, configurer);
 
-		engine.start();
+		engine.run();
+	}
+
+	@Test
+	public void theGameShouldBeAbleToSendBoard() {
+		Configurer configurer = new DefaultConfigurer();
+		TestPresenter presenter = new TestPresenter();
+		GameEngine engine = new GameEngine(presenter, configurer);
+
+		engine.run();
+		presenter.render();
+		presenter.verifyGameBoardIsRendered();
 	}
 }
