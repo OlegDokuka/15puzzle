@@ -53,6 +53,7 @@ The first part of the content is **GameBoard**.
 The second part of the output is helping window with available terminal commands.
 
 > *Note*: All commands will be executed only after you have pressed ***enter*** on the keyboard
+
 > *Important*: All movement (from left to right, etc) is relative to the puzzle without number, so it means that by entering **1** you will swap ***13*** with ***empty*** puzzle.
 
 <pre>
