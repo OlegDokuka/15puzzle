@@ -1,0 +1,25 @@
+---------------------------------
+|       |       |       |       |
+|       |   1   |   2   |   3   |
+|       |       |       |       |
+---------------------------------
+|       |       |       |       |
+|   4   |   5   |   6   |   7   |
+|       |       |       |       |
+---------------------------------
+|       |       |       |       |
+|   8   |   9   |  10   |  11   |
+|       |       |       |       |
+---------------------------------
+|       |       |       |       |
+|  12   |  13   |  14   |  15   |
+|       |       |       |       |
+---------------------------------
+Please, use following game-play commands :
+  * Use 1 to move element from left to right empty space
+  * Use 2 to move element from right to left empty space
+  * Use 3 to move element from top to bottom empty space
+  * Use 4 to move element from bottom to top empty space
+  * Use r to restart the game
+  * Use q to quit the game
+  * Use h to show help menu
